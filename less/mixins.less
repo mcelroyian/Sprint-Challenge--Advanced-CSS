@@ -1,1 +1,26 @@
 // Mixins Here
+
+.bg-styles {
+    background-color: @nav-bg;
+    color: @nav-font;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.mybtn(@text, @bg) {
+    color: @text;
+    background-color: @bg;
+    width: 75px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    border: 1px solid @bg;
+
+    &:hover {
+        color: @bg;
+        background-color: @text;
+    }
+}
